@@ -1,0 +1,259 @@
+{% extends 'main.html' %}
+
+<title>{% block title %}Home{% endblock title %}</title>
+
+{% block content %}
+
+<h2 class="text-center mt-5 mb-5">AI Predicting Oral Cancer</h2>
+<h5>
+  <form class="row g-3" action="" method="POST">
+    {% csrf_token %}
+    <div class="d-flex flex-wrap justify-content-center mx-5">
+      <div class="col-md-3 mx-3">
+        <div class="text-center"><label for="fname">Age</label></div>
+        <input
+          type="float"
+          class="form-control mb-3"
+          name="Age"
+          required
+          placeholder="Age"
+        />
+      </div>
+
+      <div class="col-md-3 mx-3">
+        <div class="text-center"><label for="fname">Gender</label></div>
+        <input
+          type="float"
+          class="form-control"
+          name="Gender"
+          required
+          placeholder="Gender"
+        />
+      </div>
+
+      <div class="col-md-3 mx-3">
+        <div class="text-center"><label for="fname">Tobacco</label></div>
+        <input
+          type="float"
+          class="form-control"
+          name="Tobacco"
+          required
+          placeholder="Tobacco"
+        />
+      </div>
+
+      <div class="col-md-3 mx-3">
+        <div class="text-center"><label for="fname">Alcohol</label></div>
+        <input
+          type="float"
+          class="form-control mb-3"
+          name="Alcohol"
+          required
+          placeholder="Alcohol"
+        />
+      </div>
+
+      <div class="col-md-3 mx-3">
+        <div class="text-center"><label for="fname">HPV</label></div>
+        <input
+          type="float"
+          class="form-control"
+          name="HPV"
+          required
+          placeholder="HPV"
+        />
+      </div>
+      <div class="col-md-3 mx-3">
+        <div class="text-center"><label for="fname">BetelUse</label></div>
+        <input
+          type="float"
+          class="form-control"
+          name="BetelUse"
+          required
+          placeholder="BetelUse"
+        />
+      </div>
+
+      <div class="col-md-3 mx-3">
+        <div class="text-center"><label for="fname">ChronicSun</label></div>
+        <input
+          type="float"
+          class="form-control mb-3"
+          name="ChronicSun"
+          required
+          placeholder="ChronicSun"
+        />
+      </div>
+
+      <div class="col-md-3 mx-3">
+        <div class="text-center"><label for="fname">PoorOral</label></div>
+        <input
+          type="float"
+          class="form-control"
+          name="PoorOral"
+          required
+          placeholder="PoorOral"
+        />
+      </div>
+
+      <div class="col-md-3 mx-3">
+        <div class="text-center"><label for="fname">Diet</label></div>
+        <input
+          type="float"
+          class="form-control"
+          name="Diet"
+          required
+          placeholder="Diet"
+        />
+      </div>
+      <div class="col-md-3 mx-3">
+        <div class="text-center">
+          <label for="fname">FamilyHistoryCancer</label>
+        </div>
+        <input
+          type="float"
+          class="form-control mb-3"
+          name="FamilyHistoryCancer"
+          required
+          placeholder="FamilyHistoryCancer"
+        />
+      </div>
+
+      <div class="col-md-3 mx-3">
+        <div class="text-center">
+          <label for="fname">CompromisedImmune</label>
+        </div>
+        <input
+          type="float"
+          class="form-control"
+          name="CompromisedImmune"
+          required
+          placeholder="CompromisedImmune"
+        />
+      </div>
+      <div class="col-md-3 mx-3">
+        <div class="text-center"><label for="fname">OralLesions</label></div>
+        <input
+          type="float"
+          class="form-control"
+          name="OralLesions"
+          required
+          placeholder="OralLesions"
+        />
+      </div>
+
+      <div class="col-md-3 mx-3">
+        <div class="text-center">
+          <label for="fname">Bleeding</label>
+        </div>
+        <input
+          type="float"
+          class="form-control mb-3"
+          name="Bleeding"
+          required
+          placeholder="Bleeding"
+        />
+      </div>
+      <div class="col-md-3 mx-3">
+        <div class="text-center">
+          <label for="fname">DifficultySwallowing</label>
+        </div>
+        <input
+          type="float"
+          class="form-control mb-3"
+          name="DifficultySwallowing"
+          required
+          placeholder="DifficultySwallowing"
+        />
+      </div>
+
+      <div class="col-md-3 mx-3">
+        <div class="text-center"><label for="fname">PatchesMouth</label></div>
+        <input
+          type="float"
+          class="form-control mb-3"
+          name="PatchesMouth"
+          required
+          placeholder="PatchesMouth"
+        />
+      </div>
+      <div class="col-md-3 mx-3">
+        <div class="text-center"><label for="fname">TumorSize</label></div>
+        <input
+          type="float"
+          class="form-control mb-3"
+          name="TumorSize"
+          required
+          placeholder="TumorSize"
+        />
+      </div>
+      <div class="col-md-3 mx-3">
+        <div class="text-center"><label for="fname">CancerStage</label></div>
+        <input
+          type="float"
+          class="form-control mb-3"
+          name="CancerStage"
+          required
+          placeholder="CancerStage"
+        />
+      </div>
+
+      <div class="col-md-3 mx-3">
+        <div class="text-center"><label for="fname">TreatmentType</label></div>
+        <input
+          type="float"
+          class="form-control mb-3"
+          name="TreatmentType"
+          required
+          placeholder="TreatmentType"
+        />
+      </div>
+      <div class="col-md-3 mx-3">
+        <div class="text-center"><label for="fname">SurvivalRate</label></div>
+        <input
+          type="float"
+          class="form-control mb-3"
+          name="SurvivalRate"
+          required
+          placeholder="SurvivalRate"
+        />
+      </div>
+      <div class="col-md-3 mx-3">
+        <div class="text-center"><label for="fname">CostTreatment</label></div>
+        <input
+          type="float"
+          class="form-control mb-3"
+          name="CostTreatment"
+          required
+          placeholder="CostTreatment"
+        />
+      </div>
+
+      <div class="col-md-3 mx-3">
+        <div class="text-center"><label for="fname">EconomicBurden</label></div>
+        <input
+          type="float"
+          class="form-control mb-3"
+          name="EconomicBurden"
+          required
+          placeholder="EconomicBurden"
+        />
+      </div>
+      <div class="col-md-3 mx-3">
+        <div class="text-center"><label for="fname">EarlyDiagnosis</label></div>
+        <input
+          type="float"
+          class="form-control mb-3"
+          name="EarlyDiagnosis"
+          required
+          placeholder="EarlyDiagnosis"
+        />
+      </div>
+    </div>
+    <div>
+      <input type="submit" class="btn btn-success px-5 mb-5" />
+    </div>
+  </form>
+</h5>
+
+{% endblock %}

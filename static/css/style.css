@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  /* background: #eee; */
+  height: 100%;
+  margin: 25px 0;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+a {
+  font-family: "Kanit", sans-serif;
+  font-size: 18px;
+}
+
+div {
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+  color: green;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgb(118, 200, 221);
+}
+
+tr:hover {
+  background-color: greenyellow;
+}
+
+th {
+  background-color: #04aa6d;
+  color: black;
+  /* color: green; */
+}
+
+button {
+  font-family: "Kanit", sans-serif;
+  font-size: 18px;
+  border-radius: 12px;
+  color: aqua;
+  background-color: #04aa6d;
+  cursor: pointer;
+}
+
+/* ###-CRUD2-#################### */
+.container {
+  margin: 80px 240px 60px 240px;
+  padding: 0px 100px 100px 100px;
+}
+
+#customers {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid rgb(17, 4, 4);
+  padding: 6px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+
+#customers #mid {
+  text-align: center;
+}
+
+#customers #up {
+  font-family: "Kanit", sans-serif;
+  font-size: 18px;
+  background-color: blue;
+  border-color: white;
+  border-radius: 5px;
+  padding: 8px;
+  color: white;
+}
+
+#customers #del {
+  font-family: "Kanit", sans-serif;
+  font-size: 18px;
+  background-color: red;
+  border-color: white;
+  border-radius: 5px;
+  padding: 8px;
+  color: white;
+}
+
+#customers button {
+  width: 100%;
+}
+
+.container1 #new {
+  background-color: blue;
+  border-color: red;
+  border-radius: 5px;
+  padding: 8px;
+  color: white;
+}
+
+.container2 #new1 {
+  background-color: blue;
+  border-color: red;
+  border-radius: 5px;
+  padding: 8px;
+  color: white;
+}
+
+h1 {
+  color: green;
+}
+
+.container1 input {
+  padding: 8px;
+}
+
+.container2 input {
+  padding: 8px;
+}
+
+.container1 {
+  margin: 80px 240px 60px 240px;
+  padding: 0px 100px 100px 100px;
+}
+
+.container2 {
+  margin: 80px 240px 60px 240px;
+  padding: 0px 100px 100px 100px;
+}
+
+.container #new3 {
+  padding: 8px;
+  background-color: rgb(27, 24, 199);
+  color: white;
+  border-radius: 4px;
+  border-color: #04aa6d;
+}

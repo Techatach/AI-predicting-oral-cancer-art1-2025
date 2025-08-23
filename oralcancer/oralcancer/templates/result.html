@@ -1,0 +1,24 @@
+{% extends 'base.html' %} {% block content %} {% comment %}
+<div class="container-sm">
+  {% endcomment %}
+  <div class="d-inline flex flex-column">
+    <br /><br />
+    <h1>ผลการพยากรณ์พบว่า: {{result}}</h1>
+    <br />
+    <div class="mb-8 leading-relaxed">
+      <pre
+        style="
+          font-size: 30px;
+          text-align: left;
+          margin-left: 640px;
+          font-weight: bold;
+        "
+      >
+      0: ปกติไม่เป็นมะเร็งช่องปาก
+      1: มะเร็งช่องปาก
+      </pre>
+      <a href="{% url 'predictor' %}"><h2>Add New Data</h2></a><br /><br />
+    </div>
+  </div>
+  {% endblock %}
+</div>

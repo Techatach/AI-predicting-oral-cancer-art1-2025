@@ -1,0 +1,24 @@
+{% extends 'main.html' %} {% block content %} {% comment %}
+<div class="container-sm">
+  {% endcomment %}
+  <div class="d-inline flex flex-column">
+    <br /><br />
+    <h1>Prediction: {{result}}</h1>
+    <br />
+    <div class="mb-8 leading-relaxed">
+      <pre
+        style="
+          font-size: 30px;
+          text-align: left;
+          margin-left: 640px;
+          font-weight: bold;
+        "
+      >
+      0: Normal (No oral cancer)
+      1: Oral Cancer
+      </pre>
+      <a href="{% url 'predictor' %}"><h2>Add New Data</h2></a><br /><br />
+    </div>
+  </div>
+  {% endblock %}
+</div>
